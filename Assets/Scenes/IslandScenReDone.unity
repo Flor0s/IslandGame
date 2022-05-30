@@ -247,8 +247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
   m_AutoFocus: 1
   m_LightEstimation: 0
   m_FacingDirection: 1
@@ -545,6 +545,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1383900686362364757, guid: 8f1b575703a35bd4c9da3e9c124000fe,
+        type: 3}
+      propertyPath: RotateWithTouch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3685428600504717498, guid: 8f1b575703a35bd4c9da3e9c124000fe,
         type: 3}
       propertyPath: m_RootOrder
