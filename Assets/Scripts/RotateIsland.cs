@@ -11,11 +11,6 @@ public class RotateIsland : MonoBehaviour
 
     private void Update()
     {
-        if (!RotateWithTouch)
-        {
-            AutoRotate();
-        }
-
         if (RotateWithTouch)
         {
             if (Input.touchCount > 0)
@@ -28,6 +23,7 @@ public class RotateIsland : MonoBehaviour
                 }
             }
         }
+        AutoRotate();
     }
 
     private void AutoRotate()
