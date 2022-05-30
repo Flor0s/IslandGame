@@ -7,7 +7,7 @@ using UnityEngine.XR.ARFoundation;
 public class AncoringIsland : MonoBehaviour
 {
     [SerializeField] private Transform raycastPos;
-    private bool _grounded;
+    private bool _grounded = false;
 
     private void Update()
     {
@@ -20,7 +20,7 @@ public class AncoringIsland : MonoBehaviour
     private void FindGround()
     {
         RaycastHit hit;
-        if (Physics.Raycast(raycastPos.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity))
+        if (Physics.Raycast(raycastPos.position, transform.TransformDirection(Vector3.down), out hit))
         {
             transform.position = hit.transform.position;
             _grounded = true;
