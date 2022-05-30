@@ -24,16 +24,6 @@ public class AncoringIsland : MonoBehaviour
         {
             transform.position = hit.transform.position;
             _grounded = true;
-            Debug.Log("FoundGround");
         }
-        Debug.Log("GroundNotFound");
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        // Draws a 5 unit long red line in front of the object
-        Gizmos.color = Color.red;
-        Vector3 direction = transform.TransformDirection(Vector3.down) * 5;
-        Gizmos.DrawRay(raycastPos.position, direction);
     }
 }
