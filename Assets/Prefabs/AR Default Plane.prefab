@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d180956a54db4646a1c6342921672ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackingStateVisibilityThreshold: 1
+  m_TrackingStateVisibilityThreshold: 0
   m_HideSubsumed: 1
 --- !u!64 &1771809581337095661
 MeshCollider:
@@ -94,7 +94,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771809581337095657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

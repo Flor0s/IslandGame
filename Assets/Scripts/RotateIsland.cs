@@ -15,16 +15,19 @@ public class RotateIsland : MonoBehaviour
         {
             AutoRotate();
         }
-        
-        //if (TouchControls.T == 1)
-        //{
-        //    Touch screenTouch = Input.GetTouch(0);
 
-        //    if (screenTouch.phase == TouchPhase.Moved)
-        //    {
-        //        transform.Rotate(0f, screenTouch.deltaPosition.x, 0f);
-        //    }
-        //}
+        if (RotateWithTouch)
+        {
+            if (Input.touchCount > 0)
+            {
+                Touch screenTouch = Input.GetTouch(0);
+
+                if (screenTouch.phase == TouchPhase.Moved)
+                {
+                    transform.Rotate(0f, screenTouch.deltaPosition.x, 0f);
+                }
+            }
+        }
     }
 
     private void AutoRotate()
