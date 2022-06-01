@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6584057436430830651}
   - component: {fileID: 8987973276779837681}
   m_Layer: 0
-  m_Name: Pref_Zonnepaneel
+  m_Name: Zonnepaneel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
