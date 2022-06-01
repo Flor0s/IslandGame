@@ -9,15 +9,19 @@ public class ObjectLevelUp : MonoBehaviour
 
     public float growAmount;
     public float growTime;
+    [SerializeField] private float timeLeft;
 
     public bool DeActivateObjectTurnOf = false;
     public bool DoLevelUp = false;
     [SerializeField] private int Level = 0;
+    private GameObject ObjectToAnimate;
+    private bool TimerON = false;
 
     private void Start()
     {
         Level = 0;
         Diffrentstages[Level].gameObject.SetActive(true);
+        ObjectToAnimate = GameObject.FindGameObjectWithTag("Island");
     }
 
     private void Update()
@@ -25,8 +29,13 @@ public class ObjectLevelUp : MonoBehaviour
         if (DoLevelUp == true) //transition toevoegen iets van particles en the jumping via code
         {
             DoLevelUp = false;
-            transform.localScale = Vector3.Lerp(transform.localScale, transform.localScale + new Vector3(0, growAmount, 0), growTime * Time.deltaTime);
+            Vector3.Lerp(transform.localScale, transform.localScale + new Vector3(0, growAmount, 0), growTime * Time.deltaTime);
             levelUP();
+        }
+
+        if (TimerON)
+        {
+            Timer();
         }
     }
 
@@ -38,6 +47,18 @@ public class ObjectLevelUp : MonoBehaviour
         }
         Level++;
         Diffrentstages[Level].gameObject.SetActive(true);
-        // transform.localScale = Vector3.Lerp(transform.localScale, transform.localScale - new Vector3(0, growAmount, 0), growTime * Time.deltaTime);
+        timeLeft = growTime + 0.5f;
+        TimerON = true;
+    }
+
+    public void Timer()
+    {
+        timeLeft -= Time.deltaTime;
+
+        if (timeLeft <= 0)
+        {
+            TimerON = false;
+            //Vector3.Lerp(transform.localScale, transform.localScale - new Vector3(0, growAmount, 0), growTime * Time.deltaTime);
+        }
     }
 }

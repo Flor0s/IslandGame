@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ThermoLiqued
+  - Island
   layers:
   - Default
   - TransparentFX
