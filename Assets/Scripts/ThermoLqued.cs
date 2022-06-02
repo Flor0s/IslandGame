@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ThermoLqued : MonoBehaviour
 {
-    public bool allBuildingsBuilt = false;
+    public bool allBuildingsBuilt = false;//If this is true, tentacles must light up
+    public bool ThermometerFull = false;// if this is true player lost
     public float GrowAmount;//amount that the temprature rises
     public float ShrinkAmount;//amount that the temprature goes down
     public float timer;
