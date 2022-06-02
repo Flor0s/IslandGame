@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3567093725561572415
+--- !u!1 &1462666931109035248
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7520381484175191691}
-  - component: {fileID: 3485700365089583978}
-  - component: {fileID: 9181673541800124379}
+  - component: {fileID: 6509731436180767841}
+  - component: {fileID: 3412266422357068902}
+  - component: {fileID: 4955964321162932702}
   m_Layer: 0
-  m_Name: Autoweg
+  m_Name: Fietspad3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7520381484175191691
+--- !u!4 &6509731436180767841
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3567093725561572415}
-  m_LocalRotation: {x: 0, y: 0.12555838, z: 0, w: 0.99208623}
-  m_LocalPosition: {x: -0.6900005, y: -0.04700041, z: -1.03}
+  m_GameObject: {fileID: 1462666931109035248}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.045663357, y: 2.220446e-16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7414381418970488892}
+  m_Father: {fileID: 1490791776930025572}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 14.426, z: 0}
---- !u!33 &3485700365089583978
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3412266422357068902
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3567093725561572415}
-  m_Mesh: {fileID: 7163574697251363772, guid: 17b69788168a2aa4daebde457a11dbfc, type: 3}
---- !u!23 &9181673541800124379
+  m_GameObject: {fileID: 1462666931109035248}
+  m_Mesh: {fileID: 6150017138497171936, guid: 7ac787616829e2246b2890c21337efe5, type: 3}
+--- !u!23 &4955964321162932702
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3567093725561572415}
+  m_GameObject: {fileID: 1462666931109035248}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7903531690047208070
+--- !u!1 &2304589103767522014
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7414381418970488892}
+  - component: {fileID: 1490791776930025572}
   m_Layer: 0
   m_Name: Autoweg
   m_TagString: Untagged
@@ -99,19 +99,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7414381418970488892
+--- !u!4 &1490791776930025572
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7903531690047208070}
+  m_GameObject: {fileID: 2304589103767522014}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65, y: 5.838, z: -1.739}
-  m_LocalScale: {x: 0.05928399, y: 0.05928399, z: 0.05928399}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 9.923671, y: 0, z: -5.578901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7520381484175191691}
+  - {fileID: 6509731436180767841}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
