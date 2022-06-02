@@ -5627,15 +5627,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diffrentstages:
-  - {fileID: 2192161384434052359}
-  - {fileID: 1345862687896360034}
-  growAmount: 1.24
-  growTime: 1.07
-  timeLeft: 0
   DeActivateObjectTurnOf: 1
   DoLevelUp: 0
   Level: 0
+  Diffrentstages:
+  - {fileID: 2192161384434052359}
+  - {fileID: 1345862687896360034}
 --- !u!95 &1345862686711031801
 Animator:
   serializedVersion: 4
@@ -5702,15 +5699,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diffrentstages:
-  - {fileID: 2192161384301625255}
-  - {fileID: 2192161384968705878}
-  growAmount: 0
-  growTime: 0
-  timeLeft: 0
   DeActivateObjectTurnOf: 1
   DoLevelUp: 0
   Level: 0
+  Diffrentstages:
+  - {fileID: 2192161384301625255}
+  - {fileID: 2192161384968705878}
 --- !u!1 &1345862687210648834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,15 +5787,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diffrentstages:
-  - {fileID: 2192161384990127322}
-  - {fileID: 2192161385966124137}
-  growAmount: 0
-  growTime: 0
-  timeLeft: 0
   DeActivateObjectTurnOf: 1
   DoLevelUp: 0
   Level: 0
+  Diffrentstages:
+  - {fileID: 2192161384990127322}
+  - {fileID: 2192161385966124137}
 --- !u!4 &1345862687273908561
 Transform:
   m_ObjectHideFlags: 0
@@ -5848,15 +5839,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diffrentstages:
-  - {fileID: 1345862687683696730}
-  - {fileID: 1345862686356233082}
-  growAmount: 0
-  growTime: 0
-  timeLeft: 0
   DeActivateObjectTurnOf: 1
   DoLevelUp: 0
   Level: 0
+  Diffrentstages:
+  - {fileID: 1345862687683696730}
+  - {fileID: 1345862686356233082}
 --- !u!4 &1345862687683696725
 Transform:
   m_ObjectHideFlags: 0
@@ -5936,15 +5924,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diffrentstages:
-  - {fileID: 1345862686410163709}
-  - {fileID: 1345862687210648834}
-  growAmount: 0
-  growTime: 0
-  timeLeft: 0
   DeActivateObjectTurnOf: 0
   DoLevelUp: 0
   Level: 0
+  Diffrentstages:
+  - {fileID: 1345862686410163709}
+  - {fileID: 1345862687210648834}
 --- !u!1 &1345862687896360034
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,15 +6015,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diffrentstages:
-  - {fileID: 2192161384842683845}
-  - {fileID: 1186095633}
-  growAmount: 0
-  growTime: 0
-  timeLeft: 0
   DeActivateObjectTurnOf: 1
   DoLevelUp: 0
   Level: 0
+  Diffrentstages:
+  - {fileID: 2192161384842683845}
+  - {fileID: 1186095633}
 --- !u!1 &1383900687686189656
 GameObject:
   m_ObjectHideFlags: 0

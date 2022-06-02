@@ -5,7 +5,10 @@ using UnityEngine.Events;
 
 public class GameLose : MonoBehaviour
 {
+    // ff naar kijken naar conventies
+    //checked wat bool doet
     private bool SciptOnWinningObject = false;
+
     public UnityEvent Lose;
 
     private void OnTriggerEnter(Collider other)

@@ -26,6 +26,8 @@ public class ThermoLqued : MonoBehaviour
 
     public void CO2Up()
     {
+        //doe coroutines
+        //static utilitie classes
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
         {

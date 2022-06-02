@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChanchingColor : MonoBehaviour
 {
+    //kijk ff of je dit kan aan passen met gradient en switch case.
+    // ff kijken naar convientjes
     [Header("Tempreture Settings")]
     public Material[] tempreatureColors;
 

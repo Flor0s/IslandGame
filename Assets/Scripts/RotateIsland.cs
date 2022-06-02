@@ -11,18 +11,18 @@ public class RotateIsland : MonoBehaviour
 
     private void Update()
     {
-        if (RotateWithTouch)
-        {
-            if (Input.touchCount > 0)
-            {
-                Touch screenTouch = Input.GetTouch(0);
+        //if (RotateWithTouch)
+        //{
+        //    if (Input.touchCount > 0)
+        //    {
+        //        Touch screenTouch = Input.GetTouch(0);
 
-                if (screenTouch.phase == TouchPhase.Moved)
-                {
-                    transform.Rotate(0f, -(screenTouch.deltaPosition.y - (rotationSpeed * Time.deltaTime)), 0f);
-                }
-            }
-        }
+        //        if (screenTouch.phase == TouchPhase.Moved)
+        //        {
+        //            transform.Rotate(0f, -(screenTouch.deltaPosition.y - (rotationSpeed * Time.deltaTime)), 0f);
+        //        }
+        //    }
+        //}
         AutoRotate();
     }
 

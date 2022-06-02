@@ -12,14 +12,12 @@ public class AncoringIsland : MonoBehaviour
 
     private void Update()
     {
-        if (!_grounded)
-        {
-            FindGround();
-        }
+        FindGround();
     }
 
     private void FindGround()
     {
+        if (_grounded) return;
         RaycastHit hit;
         if (Physics.Raycast(raycastPos.position, transform.TransformDirection(Vector3.down), out hit))
         {
