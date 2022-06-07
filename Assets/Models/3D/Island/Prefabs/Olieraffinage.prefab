@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6918220037247062661}
   - component: {fileID: 5180972671504557647}
   m_Layer: 0
-  m_Name: Koolcentrale
+  m_Name: Olieraffinage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
