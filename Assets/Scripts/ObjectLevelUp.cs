@@ -11,10 +11,13 @@ public class ObjectLevelUp : MonoBehaviour
     [Header("levels")]
     public GameObject[] Diffrentstages;
 
+    private Animator m_Animator;
+
     private void Start()
     {
         Level = 0;
         Diffrentstages[Level].gameObject.SetActive(true);
+        m_Animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -22,13 +25,14 @@ public class ObjectLevelUp : MonoBehaviour
         if (DoLevelUp == true) //transition toevoegen iets van particles en the jumping via code
         {
             DoLevelUp = false;
-
+            m_Animator.SetBool("DoGrowShrink", true);
             LevelUP();
         }
     }
 
     public void LevelUP()
     {
+        m_Animator.SetTrigger("ShrinkTrigger");
         if (DeActivateObjectTurnOf == true)
         {
             Diffrentstages[Level].gameObject.SetActive(false);

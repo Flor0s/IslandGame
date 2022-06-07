@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 59442846}
   - component: {fileID: 59442845}
   - component: {fileID: 59442844}
-  - component: {fileID: 59442847}
   m_Layer: 5
   m_Name: Aardolie -> windmolen button
   m_TagString: Untagged
@@ -435,7 +434,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -458,19 +457,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1345862686711031800}
         m_TargetAssemblyTypeName: ObjectLevelUp, Assembly-CSharp
-        m_MethodName: levelUP
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ThermoLqued, Assembly-CSharp
-        m_MethodName: CO2Down
+        m_MethodName: LevelUP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -518,20 +505,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59442842}
   m_CullTransparentMesh: 1
---- !u!114 &59442847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59442842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477dfc9a9c146ed44b143e7b52cf0cd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawnPostion: {fileID: 0}
-  _prefab: {fileID: 4854658470406099258, guid: 8d61c22ddf129874799c6c440c336e10, type: 3}
 --- !u!4 &151624156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1154400660929487740, guid: 3af5613302dd51942939fd139d73ff65,
@@ -917,18 +890,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ThermoLqued, Assembly-CSharp
-        m_MethodName: CO2Down
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &355860651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1046,6 +1007,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1663438563}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &415222639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1057,8 +1030,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.9935671, z: 1}
+  m_Center: {x: 0, y: 1.9546175, z: 0}
 --- !u!23 &415222640
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1226,18 +1199,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1345862686729245943}
         m_TargetAssemblyTypeName: ObjectLevelUp, Assembly-CSharp
         m_MethodName: levelUP
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ThermoLqued, Assembly-CSharp
-        m_MethodName: CO2Down
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3260,31 +3221,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1651557433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1345862687746403328}
-        m_TargetAssemblyTypeName: ObjectLevelUp, Assembly-CSharp
-        m_MethodName: levelUP
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ThermoLqued, Assembly-CSharp
-        m_MethodName: CO2Down
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1651557433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3939,18 +3876,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ThermoLqued, Assembly-CSharp
-        m_MethodName: CO2Down
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2001162685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4268,18 +4193,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1345862687273908568}
         m_TargetAssemblyTypeName: ObjectLevelUp, Assembly-CSharp
         m_MethodName: levelUP
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ThermoLqued, Assembly-CSharp
-        m_MethodName: CO2Down
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5680,6 +5593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345862686729245937}
   - component: {fileID: 1345862686729245943}
+  - component: {fileID: 1345862686729245944}
   m_Layer: 0
   m_Name: Kool -> Stuwdam
   m_TagString: Untagged
@@ -5705,6 +5619,26 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 2192161384301625255}
   - {fileID: 2192161384968705878}
+--- !u!95 &1345862686729245944
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345862686729245942}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dcc61dd29ac9174bb274bb64b674da8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1345862687210648834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,6 +5685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345862687211014813}
   - component: {fileID: 1345862687211014814}
+  - component: {fileID: 1345862687211014815}
   m_Layer: 0
   m_Name: Weg -> fietspad
   m_TagString: Untagged
@@ -5793,6 +5728,26 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 2192161384990127322}
   - {fileID: 2192161385966124137}
+--- !u!95 &1345862687211014815
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345862687211014786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dcc61dd29ac9174bb274bb64b674da8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1345862687273908561
 Transform:
   m_ObjectHideFlags: 0
@@ -5820,6 +5775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345862687273908561}
   - component: {fileID: 1345862687273908568}
+  - component: {fileID: 1345862687273908569}
   m_Layer: 0
   m_Name: Stoom -> zeil
   m_TagString: Untagged
@@ -5845,6 +5801,26 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 1345862687683696730}
   - {fileID: 1345862686356233082}
+--- !u!95 &1345862687273908569
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345862687273908567}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dcc61dd29ac9174bb274bb64b674da8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1345862687683696725
 Transform:
   m_ObjectHideFlags: 0
@@ -5888,6 +5864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345862687746403327}
   - component: {fileID: 1345862687746403328}
+  - component: {fileID: 1345862687746403329}
   m_Layer: 0
   m_Name: huis -> huismetpanelen
   m_TagString: Untagged
@@ -5930,6 +5907,26 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 1345862686410163709}
   - {fileID: 1345862687210648834}
+--- !u!95 &1345862687746403329
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345862687746403325}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dcc61dd29ac9174bb274bb64b674da8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1345862687896360034
 GameObject:
   m_ObjectHideFlags: 0
@@ -5996,6 +5993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345862688118750029}
   - component: {fileID: 1345862688118750067}
+  - component: {fileID: 1345862688118750068}
   m_Layer: 0
   m_Name: Boicentrale -> kern
   m_TagString: Untagged
@@ -6021,6 +6019,26 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 2192161384842683845}
   - {fileID: 1186095633}
+--- !u!95 &1345862688118750068
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345862688118750066}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dcc61dd29ac9174bb274bb64b674da8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1383900687686189656
 GameObject:
   m_ObjectHideFlags: 0
