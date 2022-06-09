@@ -10,6 +10,11 @@ public class AncoringIsland : MonoBehaviour
     [SerializeField] private Transform raycastPos;
     [SerializeField] private bool _grounded = false;
 
+    private void Start()
+    {
+        raycastPos = gameObject.transform.Find("AnchorIsland").GetComponent<Transform>();
+    }
+
     private void Update()
     {
         FindGround();
