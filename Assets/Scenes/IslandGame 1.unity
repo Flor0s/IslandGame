@@ -3131,6 +3131,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Koolcentrale_Gesloopt
       objectReference: {fileID: 0}
+    - target: {fileID: 4919795938506807300, guid: e5e7044f9eafe62459b763605269d161,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5696333329594041022, guid: e5e7044f9eafe62459b763605269d161,
         type: 3}
       propertyPath: m_RootOrder
