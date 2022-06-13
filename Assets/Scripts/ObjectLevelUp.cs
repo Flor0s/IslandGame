@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObjectLevelUp : MonoBehaviour
 {
-    public bool DeActivateObjectTurnOf = false;
-    [SerializeField] private int Level = 0;
+    [Header("If True Objects deactivate at Level UP")]
+    public bool DoDeActivate = false;
 
     [Header("Temp down amount")]
     public float TempDown;
@@ -13,30 +13,57 @@ public class ObjectLevelUp : MonoBehaviour
     [Header("levels")]
     public GameObject[] Diffrentstages;
 
+    [SerializeField] private int Level = 0;
+
+    private bool IsButtonPresed;
     private Animator m_Animator;
+    private GameObject m_ParticleGameObject;
+    private ParticleSystem m_Particle;
     private ThermoLqued m_Thermo;
-    private ParticleSystem Particle;
+    private ButtonPresses m_ButtonPressed;
+
+    private void Awake()
+    {
+        m_Thermo = FindObjectOfType<ThermoLqued>();
+        m_ButtonPressed = FindObjectOfType<ButtonPresses>();
+        m_Animator = GetComponent<Animator>();
+        m_ParticleGameObject = GameObject.FindGameObjectWithTag("Confetti");
+        m_Particle = m_ParticleGameObject.GetComponent<ParticleSystem>();
+    }
+
+    private void Update()
+    {
+        if (IsButtonPresed)
+        {
+            if (Level < m_ButtonPressed.m_ButtonsPresses)
+            {
+                LevelUP();
+            }
+        }
+    }
 
     private void Start()
     {
         Level = 0;
         Diffrentstages[Level].gameObject.SetActive(true);
-        m_Animator = GetComponent<Animator>();
-        m_Thermo = FindObjectOfType<ThermoLqued>();
-        Particle = gameObject.transform.Find("Confetti").GetComponent<ParticleSystem>();
+        IsButtonPresed = false;
     }
 
     public void LevelUP()
     {
         m_Animator.SetTrigger("ShrinkTrigger");
-        Particle.Play();
+        m_ParticleGameObject.transform.position = gameObject.transform.position;
+        m_Particle.Play();
 
-        if (DeActivateObjectTurnOf == true)
+        if (DoDeActivate)
         {
             Diffrentstages[Level].gameObject.SetActive(false);
         }
+
         Level++;
         Diffrentstages[Level].gameObject.SetActive(true);
         m_Thermo.CO2Down(TempDown);
+
+        if (!IsButtonPresed) IsButtonPresed = true;
     }
 }

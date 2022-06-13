@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ThermoLiqued
   - Island
+  - Confetti
   layers:
   - Default
   - TransparentFX
