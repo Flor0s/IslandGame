@@ -8,15 +8,18 @@ public class ButtonPresses : MonoBehaviour
     public int m_ButtonsPresses = 0;
 
     private int m_OldButtonsPresses = 0;
-    private ObjectLevelUp ObjLvl;
+    private ObjectLevelUp[] ObjLvl;
 
     private void Awake()
     {
-        ObjLvl = FindObjectOfType<ObjectLevelUp>();
+        ObjLvl = FindObjectsOfType<ObjectLevelUp>();
     }
 
     public void ButtonPress()
     {
-        ObjLvl.SendMessage("ButtonIsPressed", 1);
+        for (int i = 0; i < ObjLvl.Length; i++)
+        {
+            ObjLvl[i].SendMessage("ButtonIsPressed");
+        }
     }
 }
