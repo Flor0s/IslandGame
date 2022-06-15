@@ -9,9 +9,11 @@ public class ThermoLqued : MonoBehaviour
     public float GrowAmount;//amount that the temprature rises
     public float timer;
     private float timeLeft;
+    private Vector3 Startsize;
 
     private void Start()
     {
+        Startsize = gameObject.transform.localScale;
         resetTimer();
     }
 

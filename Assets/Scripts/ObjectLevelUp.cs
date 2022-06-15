@@ -21,6 +21,7 @@ public class ObjectLevelUp : MonoBehaviour
     private ParticleSystem m_Particle;
     private ThermoLqued m_Thermo;
     private ButtonPresses m_ButtonPressed;
+    private int m_presses = 0;
 
     private void Awake()
     {
@@ -31,22 +32,23 @@ public class ObjectLevelUp : MonoBehaviour
         m_Particle = m_ParticleGameObject.GetComponent<ParticleSystem>();
     }
 
-    private void Update()
-    {
-        if (IsButtonPresed)
-        {
-            if (Level < m_ButtonPressed.m_ButtonsPresses)
-            {
-                LevelUP();
-            }
-        }
-    }
-
     private void Start()
+
     {
         Level = 0;
         Diffrentstages[Level].gameObject.SetActive(true);
         IsButtonPresed = false;
+    }
+
+    private void Update()
+    {
+        if (IsButtonPresed)
+        {
+            if (Level < m_presses)
+            {
+                LevelUP();
+            }
+        }
     }
 
     public void LevelUP()
