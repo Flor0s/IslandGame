@@ -251,6 +251,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1239993231726302613, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.301
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239993231726302613, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239993231726302613, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30142143
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239993231726302613, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.95349103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239993231726302613, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -144.914
+      objectReference: {fileID: 0}
     - target: {fileID: 1475366378266919177, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
         type: 3}
       propertyPath: VelocityModule.x.minCurve.m_Curve.Array.data[0].value
@@ -270,6 +295,16 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.z.minCurve.m_Curve.Array.data[1].value
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699498855719395694, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699498855719395694, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2324
       objectReference: {fileID: 0}
     - target: {fileID: 2803484282708211420, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
         type: 3}
