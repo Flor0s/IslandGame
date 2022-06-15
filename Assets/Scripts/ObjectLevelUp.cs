@@ -15,13 +15,13 @@ public class ObjectLevelUp : MonoBehaviour
 
     [SerializeField] private int Level = 0;
 
-    private bool IsButtonPresed;
+    [SerializeField] private bool IsButtonPresed;
     private Animator m_Animator;
     private GameObject m_ParticleGameObject;
     private ParticleSystem m_Particle;
     private ThermoLqued m_Thermo;
     private ButtonPresses m_ButtonPressed;
-    private int m_presses = 0;
+    [SerializeField] private int m_presses = 0;
 
     private void Awake()
     {
@@ -53,19 +53,30 @@ public class ObjectLevelUp : MonoBehaviour
 
     public void LevelUP()
     {
-        m_Animator.SetTrigger("ShrinkTrigger");
-        m_ParticleGameObject.transform.position = gameObject.transform.position;
-        m_Particle.Play();
-
-        if (DoDeActivate)
+        if (Level <= Diffrentstages.Length - 2)
         {
-            Diffrentstages[Level].gameObject.SetActive(false);
+            m_Animator.SetTrigger("ShrinkTrigger");
+            m_ParticleGameObject.transform.position = gameObject.transform.position;
+            m_Particle.Play();
+
+            if (DoDeActivate)
+            {
+                Diffrentstages[Level].gameObject.SetActive(false);
+            }
+
+            Level++;
+            Diffrentstages[Level].gameObject.SetActive(true);
+            m_Thermo.CO2Down(TempDown);
+
+            if (!IsButtonPresed) IsButtonPresed = true;
         }
+    }
 
-        Level++;
-        Diffrentstages[Level].gameObject.SetActive(true);
-        m_Thermo.CO2Down(TempDown);
-
-        if (!IsButtonPresed) IsButtonPresed = true;
+    public void ButtonIsPressed()
+    {
+        if (IsButtonPresed)
+        {
+            m_presses += 1;
+        }
     }
 }
