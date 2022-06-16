@@ -1407,7 +1407,7 @@ GameObject:
   - component: {fileID: 994414419895402596}
   - component: {fileID: 994414419895402598}
   m_Layer: 0
-  m_Name: Island
+  m_Name: Island_DoNotUseInFinalGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

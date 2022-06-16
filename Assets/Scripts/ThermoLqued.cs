@@ -19,7 +19,7 @@ public class ThermoLqued : MonoBehaviour
 
     private void Update()
     {
-        if (!allBuildingsBuilt)
+        if (!allBuildingsBuilt && FindObjectOfType<AncoringIsland>()._grounded)
         {
             CO2Up();
         }

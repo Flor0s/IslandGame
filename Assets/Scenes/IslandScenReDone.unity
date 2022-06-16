@@ -169,7 +169,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1.43
+  far clip plane: 2.81
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -7917,8 +7917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YOfset: 1
-  raycastPos: {fileID: 4107773892055607261}
   _grounded: 0
+  raycastPos: {fileID: 4107773892055607261}
 --- !u!1 &4107773892736464029
 GameObject:
   m_ObjectHideFlags: 0
@@ -12511,6 +12511,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Final_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7436497472715254515, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: YOfset
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7436497472715254516, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
         type: 3}
       propertyPath: m_RootOrder
@@ -12565,6 +12570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699964290391130796, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577f4f6fdf1c91e4dbdf0c227cb7473e, type: 3}

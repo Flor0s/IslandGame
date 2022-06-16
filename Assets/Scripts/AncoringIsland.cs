@@ -7,8 +7,8 @@ using UnityEngine.XR.ARFoundation;
 public class AncoringIsland : MonoBehaviour
 {
     public float YOfset = 0.5f;
+    public bool _grounded = false;
     [SerializeField] private Transform raycastPos;
-    [SerializeField] private bool _grounded = false;
 
     private void Start()
     {
