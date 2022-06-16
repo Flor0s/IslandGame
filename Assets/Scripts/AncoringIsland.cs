@@ -6,8 +6,12 @@ using UnityEngine.XR.ARFoundation;
 
 public class AncoringIsland : MonoBehaviour
 {
+    [Header("Test Button")]
+    public bool DoTestSpawn = false;
+
     public float YOfset = 0.5f;
     public bool _grounded = false;
+    public GameObject Island_Prefab;
     [SerializeField] private Transform raycastPos;
 
     private void Start()
@@ -18,6 +22,12 @@ public class AncoringIsland : MonoBehaviour
     private void Update()
     {
         FindGround();
+
+        if (DoTestSpawn)
+        {
+            DoTestSpawn = false;
+            instantiateIsland();
+        }
     }
 
     private void FindGround()
@@ -28,6 +38,17 @@ public class AncoringIsland : MonoBehaviour
         {
             transform.position = hit.transform.position + new Vector3(0, YOfset, 0);
             _grounded = true;
+            instantiateIsland();
         }
+    }
+
+    public void instantiateIsland()
+    {
+        Instantiate(Island_Prefab, gameObject.transform);
+    }
+
+    public void DestroyIsland()
+    {
+        Destroy(Island_Prefab);
     }
 }

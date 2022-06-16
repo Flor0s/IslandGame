@@ -20,13 +20,12 @@ public class ObjectLevelUp : MonoBehaviour
     private GameObject m_ParticleGameObject;
     private ParticleSystem m_Particle;
     private ThermoLqued m_Thermo;
-    private ButtonPresses m_ButtonPressed;
+
     [SerializeField] private int m_presses = 0;
 
     private void Awake()
     {
         m_Thermo = FindObjectOfType<ThermoLqued>();
-        m_ButtonPressed = FindObjectOfType<ButtonPresses>();
         m_Animator = GetComponent<Animator>();
         m_ParticleGameObject = GameObject.FindGameObjectWithTag("Confetti");
         m_Particle = m_ParticleGameObject.GetComponent<ParticleSystem>();
