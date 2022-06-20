@@ -9,12 +9,19 @@ public class GameLose : MonoBehaviour
     //checked wat bool doet
     private bool SciptOnWinningObject = false;
 
+    private ActivateEndGame LoseButton;
     public UnityEvent Lose;
+
+    private void Start()
+    {
+        LoseButton = FindObjectOfType<ActivateEndGame>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "ThermoLiqued" && !SciptOnWinningObject)
+        if (other.tag == "ThermoLiqued")
         {
+            LoseButton.SetEndGameActive();
             Lose.Invoke();
         }
     }

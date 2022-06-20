@@ -12,6 +12,7 @@ public class AncoringIsland : MonoBehaviour
     public float YOfset = 0.5f;
     public bool _grounded = false;
     public GameObject Island_Prefab;
+    private GameObject spawnedIsland;
     [SerializeField] private Transform raycastPos;
 
     private void Start()
@@ -44,11 +45,11 @@ public class AncoringIsland : MonoBehaviour
 
     public void instantiateIsland()
     {
-        Instantiate(Island_Prefab, gameObject.transform);
+        spawnedIsland = Instantiate(Island_Prefab, gameObject.transform);
     }
 
     public void DestroyIsland()
     {
-        Destroy(Island_Prefab);
+        Destroy(spawnedIsland);
     }
 }
