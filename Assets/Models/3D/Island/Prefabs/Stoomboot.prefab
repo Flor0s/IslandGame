@@ -29,7 +29,8 @@ Transform:
   m_LocalPosition: {x: -0.463, y: 5.565, z: -1.616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8202659363031354680}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -83,3 +84,108 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &5307818120824208129
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8487129715220425434}
+    m_Modifications:
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.11062025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.11062028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.11062028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.68588454
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42555356
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.04962389
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6559495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6559495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.26406497
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.26406497
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427324, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: m_Name
+      value: Smoke particle kleine tubes (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427326, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427326, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070298923940427326, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d3cf5bf3e9970e4689719fa104a3f95, type: 3}
+--- !u!4 &8202659363031354680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
+    type: 3}
+  m_PrefabInstance: {fileID: 5307818120824208129}
+  m_PrefabAsset: {fileID: 0}
