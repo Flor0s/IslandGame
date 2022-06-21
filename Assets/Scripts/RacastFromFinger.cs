@@ -5,6 +5,13 @@ using UnityEngine;
 public class RacastFromFinger : MonoBehaviour
 {
     [SerializeField] private Camera camera;
+    private GameObject _OBJlvl;
+    private ButtonPresses buttonP;
+
+    private void Awake()
+    {
+        buttonP = FindObjectOfType<ButtonPresses>();
+    }
 
     private void Update()
     {
@@ -17,9 +24,14 @@ public class RacastFromFinger : MonoBehaviour
                 print("Raycast shot");
                 Ray ray = camera.ScreenPointToRay(Input.GetTouch(i).position);
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, 100f))
+                if (Physics.Raycast(ray, out hit, 10f))
                 {
-                    print(hit.transform.name);
+                    if (hit.collider.gameObject.tag == ("UpgradeBles"))
+                    {
+                        buttonP.ButtonPress();
+                        _OBJlvl = hit.transform.gameObject;
+                        _OBJlvl.SendMessage("LevelUP");
+                    }
                 }
             }
         }

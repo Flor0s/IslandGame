@@ -28,7 +28,7 @@ public class ObjectLevelUp : MonoBehaviour
         m_Thermo = FindObjectOfType<ThermoLqued>();
         m_Animator = GetComponent<Animator>();
         m_ParticleGameObject = GameObject.FindGameObjectWithTag("Confetti");
-        m_Particle = m_ParticleGameObject.GetComponent<ParticleSystem>();
+        //m_Particle = m_ParticleGameObject.GetComponent<ParticleSystem>();
     }
 
     private void Start()
@@ -55,8 +55,8 @@ public class ObjectLevelUp : MonoBehaviour
         if (Level <= Diffrentstages.Length - 2)
         {
             m_Animator.SetTrigger("ShrinkTrigger");
-            m_ParticleGameObject.transform.position = gameObject.transform.position;
-            m_Particle.Play();
+            //m_ParticleGameObject.transform.position = gameObject.transform.position;
+            //m_Particle.Play();
 
             if (DoDeActivate)
             {

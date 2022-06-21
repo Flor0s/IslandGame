@@ -30815,7 +30815,7 @@ GameObject:
   - component: {fileID: 231443907641424382}
   - component: {fileID: 1744790202083874858}
   m_Layer: 0
-  m_Name: Pref_Island
+  m_Name: Pref_IslandSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
