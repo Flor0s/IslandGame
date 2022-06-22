@@ -3073,7 +3073,7 @@ Animator:
   m_GameObject: {fileID: 824168989}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 237867a1c5d7aec4fb621d3ef461d279, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3215,6 +3215,21 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 76f32ac960e0fa247b7336191fece57a, type: 2}
+    - target: {fileID: 5190579299623739613, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: editorData.tabIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190579299623739613, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: editorData.vertexPathUpToDate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190579299623739613, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: editorData._bezierPath.globalNormalsAngle
+      value: 255
+      objectReference: {fileID: 0}
     - target: {fileID: 5368706143003851305, guid: 79c8616d4cc07494da87432364a13ad3,
         type: 3}
       propertyPath: m_Controller
@@ -3230,6 +3245,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d4c338a4295a2fc43ad8e5a4be030aff, type: 2}
+    - target: {fileID: 5629933446861683876, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.301
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629933446861683876, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 5992602424969953309, guid: 79c8616d4cc07494da87432364a13ad3,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -3256,6 +3281,16 @@ PrefabInstance:
       value: -0.031949997
       objectReference: {fileID: 0}
     - target: {fileID: 6851344896079078332, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3548a7896d776b34f82cabe2d159806a, type: 2}
+    - target: {fileID: 6851344897147562276, guid: 79c8616d4cc07494da87432364a13ad3,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 903e65956cb801d4ba0e7b8e6191bac6, type: 2}
+    - target: {fileID: 6851344897214019507, guid: 79c8616d4cc07494da87432364a13ad3,
         type: 3}
       propertyPath: m_Controller
       value: 
