@@ -11,9 +11,8 @@ public class ButtonPresses : MonoBehaviour
 
     public void FindObjectLVLUp()
     {
-        if (ObjLvl.Length > 0)
+        for (int i = 0; i < ObjLvl.Length; i++)
         {
-            ObjLvl.SetValue(ObjLvl.Length, 0);
         }
         ObjLvl = FindObjectsOfType<ObjectLevelUp>();
     }
