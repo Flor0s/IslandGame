@@ -196,6 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953748681013634962}
+  - component: {fileID: 2637380661866308186}
   m_Layer: 0
   m_Name: Turlte
   m_TagString: Untagged
@@ -212,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 1177353470806916392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0367, y: 0.297, z: 1.8108}
-  m_LocalScale: {x: 0.046184007, y: 0.046184007, z: 0.046184007}
+  m_LocalScale: {x: 0.9551629, y: 0.9551629, z: 0.9551629}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6996205939168235362}
@@ -223,6 +224,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2637380661866308186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177353470806916392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d93d19127a3784c8f254293d3d3400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FOVAngle: 0
+  smoothDamp: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  directionsToCheckWhenAvoidingObstacles: []
 --- !u!1 &2946480044175305754
 GameObject:
   m_ObjectHideFlags: 0
