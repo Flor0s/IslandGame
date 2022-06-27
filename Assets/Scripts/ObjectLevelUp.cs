@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ObjectLevelUp : MonoBehaviour
 {
+    public ParticleSystem m_Particle;
+
     [Header("If True Objects deactivate at Level UP")]
     public bool DoDeActivate = false;
 
@@ -13,22 +15,19 @@ public class ObjectLevelUp : MonoBehaviour
     [Header("levels")]
     public GameObject[] Diffrentstages;
 
-    [SerializeField] private int Level = 0;
+    private int Level = 0;
 
-    [SerializeField] private bool IsButtonPresed;
+    private bool IsButtonPresed;
     private Animator m_Animator;
-    private GameObject m_ParticleGameObject;
-    private ParticleSystem m_Particle;
+
     private ThermoLqued m_Thermo;
 
-    [SerializeField] private int m_presses = 0;
+    private int m_presses = 0;
 
     private void Awake()
     {
         m_Thermo = FindObjectOfType<ThermoLqued>();
         m_Animator = GetComponent<Animator>();
-        m_ParticleGameObject = GameObject.FindGameObjectWithTag("Confetti");
-        //m_Particle = m_ParticleGameObject.GetComponent<ParticleSystem>();
     }
 
     private void Start()
@@ -39,24 +38,23 @@ public class ObjectLevelUp : MonoBehaviour
         IsButtonPresed = false;
     }
 
-    private void Update()
-    {
-        if (IsButtonPresed)
-        {
-            if (Level < m_presses)
-            {
-                LevelUP();
-            }
-        }
-    }
+    //private void Update()
+    //{
+    //    if (IsButtonPresed)
+    //    {
+    //        if (Level < m_presses)
+    //        {
+    //            LevelUP();
+    //        }
+    //    }
+    //}
 
     public void LevelUP()
     {
         if (Level <= Diffrentstages.Length - 2)
         {
             m_Animator.SetTrigger("ShrinkTrigger");
-            //m_ParticleGameObject.transform.position = gameObject.transform.position;
-            //m_Particle.Play();
+            m_Particle.Play();
 
             if (DoDeActivate)
             {
@@ -71,11 +69,11 @@ public class ObjectLevelUp : MonoBehaviour
         }
     }
 
-    public void ButtonIsPressed()
-    {
-        if (IsButtonPresed)
-        {
-            m_presses += 1;
-        }
-    }
+    //public void ButtonIsPressed()
+    //{
+    //    if (IsButtonPresed)
+    //    {
+    //        m_presses += 1;
+    //    }
+    //}
 }
