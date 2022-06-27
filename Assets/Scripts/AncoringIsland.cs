@@ -9,6 +9,7 @@ public class AncoringIsland : MonoBehaviour
     [Header("Test Button")]
     public bool DoTestSpawn = false;
 
+    public bool nietmeerzoeken;
     public bool _grounded = false;
     public float YOfset = 0.5f;
     public GameObject IslandPrefab;
@@ -48,11 +49,14 @@ public class AncoringIsland : MonoBehaviour
     public void instantiateIsland()
     {
         spawnedIsland = Instantiate(IslandPrefab, gameObject.transform);
+
         _BP.FindObjectLVLUp();
     }
 
     public void DestroyIsland()
     {
+        _BP.EmptyList();
         Destroy(spawnedIsland);
+        instantiateIsland();
     }
 }
