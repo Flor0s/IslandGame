@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 324553837}
   - component: {fileID: 324553836}
   - component: {fileID: 324553835}
+  - component: {fileID: 324553838}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -409,6 +410,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324553838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324553833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46388deee698dd64584c5ac20b5220fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 46610703}
 --- !u!1 &327296267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1209,6 @@ GameObject:
   - component: {fileID: 1059354691924618587}
   - component: {fileID: 2580993019950078834}
   - component: {fileID: 7602122864662329688}
-  - component: {fileID: 7602122864662329689}
   m_Layer: 0
   m_Name: Island Final_prefab
   m_TagString: Untagged
@@ -1216,7 +1229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoTestSpawn: 0
-  nietmeerzoeken: 0
   _grounded: 0
   YOfset: 0.4
   IslandPrefab: {fileID: 6543629345504623630, guid: 79c8616d4cc07494da87432364a13ad3,
@@ -1236,7 +1248,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 327296268}
-  - {fileID: 3933040596887776922}
   - {fileID: 1059354692556455450}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1270,7 +1281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1059354691924618588}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2580993019950078834
 MonoBehaviour:
@@ -1285,91 +1296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ButtonsPresses: 0
---- !u!1001 &3933040596887776921
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1059354691924618588}
-    m_Modifications:
-    - target: {fileID: 2156596037930435575, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: timer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.69000053
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.3899994
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.32966626
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543629345504623630, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_Name
-      value: Pref_Island
-      objectReference: {fileID: 0}
-    - target: {fileID: 6543629345504623630, guid: 79c8616d4cc07494da87432364a13ad3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 79c8616d4cc07494da87432364a13ad3, type: 3}
---- !u!4 &3933040596887776922 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5873947996259854004, guid: 79c8616d4cc07494da87432364a13ad3,
-    type: 3}
-  m_PrefabInstance: {fileID: 3933040596887776921}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7484255873092386779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1464,16 +1390,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7602122864662329689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059354691924618586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46388deee698dd64584c5ac20b5220fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 46610703}

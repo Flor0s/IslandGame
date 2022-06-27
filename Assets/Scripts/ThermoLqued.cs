@@ -21,7 +21,7 @@ public class ThermoLqued : MonoBehaviour
     [Header("water")]
     public GameObject[] WaterObjects;
 
-    private int WaterNumber = 0;
+    [SerializeField] private int WaterNumber = 0;
 
     private void Start()
     {
@@ -45,7 +45,10 @@ public class ThermoLqued : MonoBehaviour
             gameObject.transform.localScale += new Vector3(0, GrowAmount, 0);
 
             ThermoHeight = gameObject.transform.localScale.y;
-            UpdateWater();
+            if (ThermoHeight > 1.25)
+            {
+                UpdateWater();
+            }
             resetTimer();
         }
     }
@@ -62,26 +65,28 @@ public class ThermoLqued : MonoBehaviour
 
     public void UpdateWater()
     {
-        Debug.Log("is in update water");
-        if (ThermoHeight > OldThermoHeight + 0.19444466666)
+        if (ThermoHeight > OldThermoHeight + 0.18750025)
         {
             OldThermoHeight = ThermoHeight;
-            Debug.Log("is in if statement 1");
+
             if (WaterNumber <= WaterObjects.Length - 2)
             {
-                Debug.Log("is in if statement 2");
                 WaterObjects[WaterNumber].SetActive(false);
                 WaterNumber += 1;
                 WaterObjects[WaterNumber].SetActive(true);
             }
         }
-        else if (ThermoHeight < OldThermoHeight - 0.19444466666)
+        if (ThermoHeight < OldThermoHeight - 0.18750025)
         {
             OldThermoHeight = ThermoHeight;
             if (WaterNumber >= 0)
             {
                 WaterObjects[WaterNumber].SetActive(false);
                 WaterNumber -= 1;
+                if (WaterNumber <= 0)
+                {
+                    WaterNumber = 0;
+                }
                 WaterObjects[WaterNumber].SetActive(true);
             }
         }

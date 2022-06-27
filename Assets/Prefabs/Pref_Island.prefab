@@ -36752,7 +36752,9 @@ MonoBehaviour:
   allBuildingsBuilt: 0
   ThermometerFull: 0
   GrowAmount: 0.025
-  timer: 0.17
+  timer: 0.49
+  OldThermoHeight: 0
+  ThermoHeight: 1
   WaterObjects:
   - {fileID: 1931608868208796590}
   - {fileID: 8701577407547549336}
