@@ -13,14 +13,14 @@ public class AncoringIsland : MonoBehaviour
     public bool _grounded = false;
     public float YOfset = 0.5f;
     public GameObject IslandPrefab;
-    private GameObject spawnedIsland;
+    [SerializeField] private GameObject spawnedIsland;
     [SerializeField] private Transform raycastPos;
-    private ButtonPresses _BP;
+    // private ButtonPresses _BP;
 
     private void Start()
     {
         raycastPos = gameObject.transform.Find("AnchorIsland").GetComponent<Transform>();
-        _BP = FindObjectOfType<ButtonPresses>();
+        // _BP = FindObjectOfType<ButtonPresses>();
     }
 
     private void Update()
@@ -49,14 +49,19 @@ public class AncoringIsland : MonoBehaviour
     public void instantiateIsland()
     {
         spawnedIsland = Instantiate(IslandPrefab, gameObject.transform);
-
-        _BP.FindObjectLVLUp();
+        // if (!nietmeerzoeken)
+        // {
+        // print(_BP.ObjLvl.Count);
+        // _BP.FindObjectLVLUp();
+        // print(_BP.ObjLvl.Count);
+        // }
     }
 
     public void DestroyIsland()
     {
-        _BP.EmptyList();
+        //_BP.ObjLvl.Clear();
         Destroy(spawnedIsland);
+        //Debug.Log(_BP.ObjLvl.Count);
         instantiateIsland();
     }
 }

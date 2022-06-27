@@ -28,7 +28,7 @@ public class RacastFromFinger : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == ("UpgradeBles"))
                     {
-                        buttonP.ButtonPress();
+                        // buttonP.ButtonPress();
                         _OBJlvl = hit.transform.gameObject;
                         _OBJlvl.SendMessage("LevelUP");
                     }

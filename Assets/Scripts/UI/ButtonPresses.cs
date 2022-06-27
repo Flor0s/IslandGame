@@ -8,39 +8,36 @@ public class ButtonPresses : MonoBehaviour
     //Counts all the Buttons pressed
     public int m_ButtonsPresses = 0;
 
-    //[SerializeField] private ObjectLevelUp[] ObjLvl;
-    [SerializeField] private List<ObjectLevelUp> ObjLvl;
+    private int m_OldListCount;
 
-    [SerializeField] private List<ObjectLevelUp> EmptyObjLvl;
+    // public List<ObjectLevelUp> ObjLvl = new List<ObjectLevelUp>();
 
-    private void Awake()
-    {
-        ObjLvl = new List<ObjectLevelUp>();
-    }
+    //  public void FindObjectLVLUp()
+    //  {
+    // hier zit het probleem dus hier moet je zoek
+    //var objects = GameObject.FindObjectsOfType<ObjectLevelUp>();
 
-    public void FindObjectLVLUp()
-    {
-        // hier zit het probleem dus hier moet je zoek
-        if (ObjLvl.Count <= 0)
-        {
-            ObjLvl.AddRange(GameObject.FindObjectsOfType<ObjectLevelUp>());
-        }
-        else
-        {
-            FindObjectLVLUp();
-        }
-    }
+    //foreach (var l_objects in objects)
+    //{
+    //    ObjLvl.Add(l_objects);
+    //}
 
-    public void EmptyList()
-    {
-        ObjLvl.RemoveRange(0, ObjLvl.Count);
-    }
+    //ObjLvl.AddRange(GameObject.FindObjectsOfType<ObjectLevelUp>());
 
-    public void ButtonPress()
-    {
-        for (int i = 0; i < ObjLvl.Count; i++)
-        {
-            ObjLvl[i].SendMessage("ButtonIsPressed");
-        }
-    }
+    //foreach (var obj in ObjLvl)
+    //{
+    //    if (obj == null) { ObjLvl.Remove(obj); }
+    //}
+    // }
+
+    //    public void ButtonPress()
+    //    {
+    //        for (int i = 0; i < ObjLvl.Count; i++)
+    //        {
+    //            foreach (var obj in ObjLvl)
+    //            {
+    //                if (obj != null) { ObjLvl[i].SendMessage("ButtonIsPressed"); }
+    //            }
+    //        }
+    //    }
 }
