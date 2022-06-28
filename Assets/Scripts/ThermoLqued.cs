@@ -15,18 +15,18 @@ public class ThermoLqued : MonoBehaviour
     public float timer;
     private float timeLeft;
 
-    [SerializeField] private float OldThermoHeight;
-    [SerializeField] private float ThermoHeight = 1;
+    private float _oldThermoHeight;
+    private float _thermoHeight = 1;
 
     [Header("water")]
     public GameObject[] WaterObjects;
 
-    [SerializeField] private int WaterNumber = 0;
+    private int _waterNumber = 0;
 
     private void Start()
     {
         resetTimer();
-        WaterObjects[WaterNumber].SetActive(true);
+        WaterObjects[_waterNumber].SetActive(true);
     }
 
     private void Update()
@@ -44,8 +44,8 @@ public class ThermoLqued : MonoBehaviour
         {
             gameObject.transform.localScale += new Vector3(0, GrowAmount, 0);
 
-            ThermoHeight = gameObject.transform.localScale.y;
-            if (ThermoHeight > 1.25)
+            _thermoHeight = gameObject.transform.localScale.y;
+            if (_thermoHeight > 1.25)
             {
                 UpdateWater();
             }
@@ -65,29 +65,29 @@ public class ThermoLqued : MonoBehaviour
 
     public void UpdateWater()
     {
-        if (ThermoHeight > OldThermoHeight + 0.18750025)
+        if (_thermoHeight > _oldThermoHeight + 0.18750025)
         {
-            OldThermoHeight = ThermoHeight;
+            _oldThermoHeight = _thermoHeight;
 
-            if (WaterNumber <= WaterObjects.Length - 2)
+            if (_waterNumber <= WaterObjects.Length - 2)
             {
-                WaterObjects[WaterNumber].SetActive(false);
-                WaterNumber += 1;
-                WaterObjects[WaterNumber].SetActive(true);
+                WaterObjects[_waterNumber].SetActive(false);
+                _waterNumber += 1;
+                WaterObjects[_waterNumber].SetActive(true);
             }
         }
-        if (ThermoHeight < OldThermoHeight - 0.18750025)
+        if (_thermoHeight < _oldThermoHeight - 0.18750025)
         {
-            OldThermoHeight = ThermoHeight;
-            if (WaterNumber >= 0)
+            _oldThermoHeight = _thermoHeight;
+            if (_waterNumber >= 0)
             {
-                WaterObjects[WaterNumber].SetActive(false);
-                WaterNumber -= 1;
-                if (WaterNumber <= 0)
+                WaterObjects[_waterNumber].SetActive(false);
+                _waterNumber -= 1;
+                if (_waterNumber <= 0)
                 {
-                    WaterNumber = 0;
+                    _waterNumber = 0;
                 }
-                WaterObjects[WaterNumber].SetActive(true);
+                WaterObjects[_waterNumber].SetActive(true);
             }
         }
     }
