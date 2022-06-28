@@ -36765,6 +36765,7 @@ MonoBehaviour:
   - {fileID: 8035359847775636493}
   - {fileID: 224570180498836379}
   - {fileID: 2084050405171935830}
+  WaterNumber: 0
 --- !u!1 &3448345335429524909
 GameObject:
   m_ObjectHideFlags: 0
@@ -42023,9 +42024,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8070250881765534852}
+  - component: {fileID: 9127312855975074663}
+  - component: {fileID: 2652275291984865686}
+  - component: {fileID: 4566192637795198990}
   m_Layer: 0
   m_Name: Bootjes
-  m_TagString: Untagged
+  m_TagString: UpgradeBles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42047,6 +42051,50 @@ Transform:
   m_Father: {fileID: 8853649873982154515}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9127312855975074663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667110777905641247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Particle: {fileID: 885449363}
+  DoDeActivate: 1
+  TempDown: 0.25
+  Diffrentstages:
+  - {fileID: 4411384124427772465}
+  - {fileID: 7552006509673486737}
+--- !u!65 &2652275291984865686
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667110777905641247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06568886, y: 0.05248651, z: 0.0822487}
+  m_Center: {x: -0.21442622, y: 0.071166635, z: 0.11848493}
+--- !u!65 &4566192637795198990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667110777905641247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.088156335, y: 0.05248651, z: 0.04585566}
+  m_Center: {x: 0.18772295, y: 0.071166635, z: 0.18397054}
 --- !u!1 &3887072309800797157
 GameObject:
   m_ObjectHideFlags: 0
@@ -87958,9 +88006,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8853649872766232789}
   - component: {fileID: 8814998208732688041}
+  - component: {fileID: 6518085564321148665}
+  - component: {fileID: 8075643681078733694}
   m_Layer: 0
   m_Name: Huizen
-  m_TagString: Untagged
+  m_TagString: UpgradeBles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88002,6 +88052,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6518085564321148665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853649872766232788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Particle: {fileID: 885449363}
+  DoDeActivate: 0
+  TempDown: 0.1
+  Diffrentstages:
+  - {fileID: 828788371364834078}
+  - {fileID: 6260285672733213682}
+--- !u!65 &8075643681078733694
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853649872766232788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30110168, y: 0.053440735, z: 0.10987922}
+  m_Center: {x: -0.1098665, y: 0.05812175, z: 0.024219634}
 --- !u!1 &8853649872845008129
 GameObject:
   m_ObjectHideFlags: 0
