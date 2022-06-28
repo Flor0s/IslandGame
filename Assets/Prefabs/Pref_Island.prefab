@@ -4930,7 +4930,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -5233,7 +5233,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -5337,7 +5337,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -20035,8 +20035,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7611797820994198025}
   endOfPathInstruction: 0
   speed: 0.25
@@ -20050,8 +20050,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7611797820994198025}
   endOfPathInstruction: 0
   speed: 0.25
@@ -20065,8 +20065,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7611797820994198025}
   endOfPathInstruction: 0
   speed: 0.25
@@ -20165,8 +20165,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20415f86e7b1b874a96f0b73e7ab16c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   alignNotLook: 1
 --- !u!1 &1238461544306026115
 GameObject:
@@ -21217,7 +21217,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -21335,12 +21335,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378091203361796429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.402553, y: 4.4739513, z: 21.202572}
-  m_LocalScale: {x: 0.08134609, y: 0.08134609, z: 0.08134609}
+  m_LocalPosition: {x: -0.22986612, y: 0.13898575, z: -0.03320384}
+  m_LocalScale: {x: 0.0048225215, y: 0.0048225215, z: 0.0048225215}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 770648171170348466}
-  m_RootOrder: 4
+  m_Father: {fileID: 2036292463860186766}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2826526339814406408
 SpriteRenderer:
@@ -21404,8 +21404,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20415f86e7b1b874a96f0b73e7ab16c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   alignNotLook: 1
 --- !u!1 &1511741872953115623
 GameObject:
@@ -21602,7 +21602,8 @@ Transform:
   m_LocalPosition: {x: -0.07375936, y: 0.020693839, z: -0.01000911}
   m_LocalScale: {x: 0.05928399, y: 0.05928399, z: 0.05928399}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 2024740659025290347}
   m_Father: {fileID: 8853649873813186958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26494,12 +26495,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591948120903503983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.092553, y: 8.176951, z: 16.174572}
-  m_LocalScale: {x: 0.08134609, y: 0.08134609, z: 0.08134609}
+  m_LocalPosition: {x: 0.08208861, y: 6.727027, z: -0.666856}
+  m_LocalScale: {x: 0.081346095, y: 0.081346095, z: 0.081346095}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 770648171170348466}
-  m_RootOrder: 3
+  m_Father: {fileID: 7933776195061372162}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9215843851311392796
 SpriteRenderer:
@@ -26563,8 +26564,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20415f86e7b1b874a96f0b73e7ab16c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   alignNotLook: 1
 --- !u!1 &1815533787962968399
 GameObject:
@@ -27085,7 +27086,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -27189,7 +27190,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -27293,7 +27294,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -27441,8 +27442,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efa00e9717cf06d4cb57d09e04cb5a64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Lose:
     m_PersistentCalls:
       m_Calls:
@@ -27455,7 +27456,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!54 &2156596039178651257
@@ -32312,12 +32313,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2200864792596366429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9025528, y: 4.4739513, z: 22.584572}
-  m_LocalScale: {x: 0.08134609, y: 0.08134609, z: 0.08134609}
+  m_LocalPosition: {x: 0.15547983, y: 0.14076424, z: 0.048726678}
+  m_LocalScale: {x: 0.0048225215, y: 0.0048225215, z: 0.0048225215}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 770648171170348466}
-  m_RootOrder: 5
+  m_Father: {fileID: 2036292463860186766}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1316223832642513059
 SpriteRenderer:
@@ -32381,8 +32382,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20415f86e7b1b874a96f0b73e7ab16c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   alignNotLook: 1
 --- !u!1 &2273692791695514001
 GameObject:
@@ -32683,7 +32684,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -32787,7 +32788,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -32916,8 +32917,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -33486,8 +33487,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 4097550586745670828}
   endOfPathInstruction: 0
   speed: -0.3
@@ -37119,8 +37120,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d7e1af31f35e484bb80cf8dfbe3cbcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   tempreatureColors:
   - {fileID: 2100000, guid: e980b371ed6a9534d9fe2ea82d8923fb, type: 2}
   - {fileID: 2100000, guid: b4b28717f814cc34386002a6c9c93e6d, type: 2}
@@ -37139,14 +37140,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f70dc88d30a9ede44b7c931221a1f707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   allBuildingsBuilt: 0
   ThermometerFull: 0
   GrowAmount: 0.025
-  timer: 0.49
-  OldThermoHeight: 0
-  ThermoHeight: 1
+  timer: 1.5
   WaterObjects:
   - {fileID: 1931608868208796590}
   - {fileID: 8701577407547549336}
@@ -37157,7 +37156,6 @@ MonoBehaviour:
   - {fileID: 8035359847775636493}
   - {fileID: 224570180498836379}
   - {fileID: 2084050405171935830}
-  WaterNumber: 0
 --- !u!1 &3448345335429524909
 GameObject:
   m_ObjectHideFlags: 0
@@ -42076,8 +42074,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -42320,7 +42318,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -42454,8 +42452,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Particle: {fileID: 885449363}
   DoDeActivate: 1
   TempDown: 0.25
@@ -42504,7 +42502,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -42550,8 +42548,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -42946,7 +42944,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -43146,6 +43144,8 @@ Transform:
   m_Children:
   - {fileID: 1910662728435893121}
   - {fileID: 3525273041220837702}
+  - {fileID: 5968784982456380351}
+  - {fileID: 7944860054931310389}
   m_Father: {fileID: 8070250881765534852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48171,8 +48171,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 788619315556697336}
   endOfPathInstruction: 0
   speed: 0.3
@@ -67559,7 +67559,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -67657,8 +67657,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 6099867264910022063}
   endOfPathInstruction: 0
   speed: 0.36
@@ -67804,12 +67804,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5146972481527973827}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6325531, y: 7.4839516, z: 17.744574}
-  m_LocalScale: {x: 0.08134609, y: 0.08134609, z: 0.08134609}
+  m_LocalPosition: {x: -0.8777872, y: 6.057643, z: 0.44433838}
+  m_LocalScale: {x: 0.081346095, y: 0.081346095, z: 0.081346095}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 770648171170348466}
-  m_RootOrder: 1
+  m_Father: {fileID: 2198655535554478347}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8500741758708818804
 SpriteRenderer:
@@ -67873,8 +67873,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20415f86e7b1b874a96f0b73e7ab16c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   alignNotLook: 1
 --- !u!1 &5333885691329794303
 GameObject:
@@ -72839,8 +72839,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -72934,8 +72934,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -74228,43 +74228,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5710925469021986881
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 770648171170348466}
-  m_Layer: 0
-  m_Name: Arrows
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &770648171170348466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5710925469021986881}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.582553, y: -1.1039515, z: -16.624573}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 467610512518116525}
-  - {fileID: 2024740659025290347}
-  - {fileID: 7883707454210608835}
-  - {fileID: 4741407735281228645}
-  - {fileID: 5968784982456380351}
-  - {fileID: 7944860054931310389}
-  m_Father: {fileID: 5873947996259854004}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6003936214501522492
 GameObject:
   m_ObjectHideFlags: 0
@@ -79260,7 +79223,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -79569,6 +79532,7 @@ Transform:
   m_Children:
   - {fileID: 2020495662573550304}
   - {fileID: 4230754533265097755}
+  - {fileID: 467610512518116525}
   m_Father: {fileID: 8853649872845008130}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79660,7 +79624,6 @@ Transform:
   - {fileID: 5747177220864313391}
   - {fileID: 381576352186211264}
   - {fileID: 8389624310698721292}
-  - {fileID: 770648171170348466}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79724,8 +79687,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cbffc8af4558fa4cbd0fbb91121a296, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   RotateWithTouch: 1
   rotationSpeed: 2.5
 --- !u!95 &5873947996259854000
@@ -79744,7 +79707,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -79973,12 +79936,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6916182419938136067}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.502553, y: 7.4839516, z: 12.544573}
-  m_LocalScale: {x: 0.08134609, y: 0.08134609, z: 0.08134609}
+  m_LocalPosition: {x: 0.447004, y: 8.05297, z: -0.08998635}
+  m_LocalScale: {x: 0.081346095, y: 0.081346095, z: 0.081346095}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 770648171170348466}
-  m_RootOrder: 0
+  m_Father: {fileID: 5864312919448169066}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2136449509223324925
 SpriteRenderer:
@@ -80042,8 +80005,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20415f86e7b1b874a96f0b73e7ab16c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   alignNotLook: 1
 --- !u!1 &7030376589713715364
 GameObject:
@@ -82328,8 +82291,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -82477,7 +82440,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -82648,6 +82611,7 @@ Transform:
   - {fileID: 4801647443171946385}
   - {fileID: 4801647441932977481}
   - {fileID: 880440540020398482}
+  - {fileID: 4741407735281228645}
   m_Father: {fileID: 8853649873777909057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82840,7 +82804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1803856538496417452
 Transform:
   m_ObjectHideFlags: 0
@@ -83205,8 +83169,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -88191,8 +88155,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   editorData:
     _bezierPath:
       points:
@@ -88695,7 +88659,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -88709,8 +88673,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Particle: {fileID: 885449363}
   DoDeActivate: 0
   TempDown: 0.1
@@ -88783,7 +88747,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -88797,8 +88761,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Particle: {fileID: 885449363}
   DoDeActivate: 1
   TempDown: 0.25
@@ -88872,7 +88836,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -88886,8 +88850,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Particle: {fileID: 885449363}
   DoDeActivate: 1
   TempDown: 0.3
@@ -88962,7 +88926,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -88976,8 +88940,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Particle: {fileID: 885449363}
   DoDeActivate: 1
   TempDown: 0.25
@@ -94023,7 +93987,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -94037,8 +94001,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 094b5da4c5fcb2848a3e76e8b624f51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Particle: {fileID: 885449363}
   DoDeActivate: 1
   TempDown: 0.25
@@ -99984,8 +99948,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7323524177974632033}
   endOfPathInstruction: 0
   speed: 0.28
@@ -99999,8 +99963,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7323524177974632033}
   endOfPathInstruction: 0
   speed: 0.28
@@ -100109,8 +100073,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 2034241337398336328}
   endOfPathInstruction: 0
   speed: 0.3
@@ -100124,8 +100088,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 2034241337398336328}
   endOfPathInstruction: 0
   speed: 0.3
@@ -100240,8 +100204,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7927080081824582631}
   endOfPathInstruction: 0
   speed: 0.25
@@ -100255,8 +100219,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 7927080081824582631}
   endOfPathInstruction: 0
   speed: 0.25
@@ -100633,8 +100597,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 509894675583899896}
   endOfPathInstruction: 0
   speed: 0.2
@@ -100648,8 +100612,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   pathCreator: {fileID: 509894675583899896}
   endOfPathInstruction: 0
   speed: 0.2
