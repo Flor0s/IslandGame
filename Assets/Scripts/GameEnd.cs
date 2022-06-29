@@ -9,6 +9,7 @@ public class GameEnd : MonoBehaviour
     //checked wat bool doet
     private bool SciptOnWinningObject = false;
 
+    public GameObject ParentObject;
     private ActivateEndGame EndButton;
     public UnityEvent End;
 

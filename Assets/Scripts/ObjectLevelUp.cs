@@ -6,13 +6,16 @@ public class ObjectLevelUp : MonoBehaviour
 {
     public ParticleSystem m_Particle;
 
-    [Header("If True Objects deactivate at Level UP")]
+    [Header("Turn of game object")]
+    [Tooltip("If this bool is set to true, the game objects wil be turned of when leveling up")]
     public bool DoDeActivate = false;
 
     [Header("Temp down amount")]
+    [Tooltip("The number in this float is the amount the temprature sinks")]
     public float TempDown;
 
     [Header("levels")]
+    [Tooltip("every child must be in this array in order to level up")]
     public GameObject[] Diffrentstages;
 
     private int Level = 0;
@@ -38,17 +41,6 @@ public class ObjectLevelUp : MonoBehaviour
         IsButtonPresed = false;
     }
 
-    //private void Update()
-    //{
-    //    if (IsButtonPresed)
-    //    {
-    //        if (Level < m_presses)
-    //        {
-    //            LevelUP();
-    //        }
-    //    }
-    //}
-
     public void LevelUP()
     {
         if (Level <= Diffrentstages.Length - 2)
@@ -67,13 +59,8 @@ public class ObjectLevelUp : MonoBehaviour
 
             if (!IsButtonPresed) IsButtonPresed = true;
         }
+        else
+        {
+        }
     }
-
-    //public void ButtonIsPressed()
-    //{
-    //    if (IsButtonPresed)
-    //    {
-    //        m_presses += 1;
-    //    }
-    //}
 }
