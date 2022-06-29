@@ -99689,12 +99689,12 @@ PrefabInstance:
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
       propertyPath: ShapeModule.type
-      value: 10
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 7.71
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
@@ -99703,8 +99703,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
+      propertyPath: ShapeModule.donutRadius
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
+        type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 1
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
@@ -99713,8 +99718,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
+        type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 11.79
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 7741086187628569535, guid: 96b0792f41a87a946a0a13768bb611fa,
         type: 3}
@@ -100494,7 +100509,7 @@ PrefabInstance:
     - target: {fileID: 2749662926224636091, guid: 6d59a0782b4262a4490b5f81d2524357,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.81
+      value: 27.35
       objectReference: {fileID: 0}
     - target: {fileID: 2749662926224636091, guid: 6d59a0782b4262a4490b5f81d2524357,
         type: 3}
@@ -100540,6 +100555,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseCustomVertexStreams
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343461007676986467, guid: 6d59a0782b4262a4490b5f81d2524357,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343461007676986467, guid: 6d59a0782b4262a4490b5f81d2524357,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8343461007676986467, guid: 6d59a0782b4262a4490b5f81d2524357,
         type: 3}
