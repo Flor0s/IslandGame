@@ -20998,7 +20998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1882015591036519363
 Transform:
   m_ObjectHideFlags: 0
@@ -27189,7 +27189,7 @@ GameObject:
   - component: {fileID: 2156596039178651258}
   - component: {fileID: 2156596039178651257}
   m_Layer: 0
-  m_Name: Red (1)
+  m_Name: Endgame
   m_TagString: ThermoLiqued
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27285,22 +27285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa00e9717cf06d4cb57d09e04cb5a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParentObject: {fileID: 0}
-  End:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  ParentObject: {fileID: 8853649873982154514}
+  ObjectsMaxLevel: 0
 --- !u!54 &2156596039178651257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32644,7 +32630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3082961530732157015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17700002, y: -0.008000209, z: 0.24500027}
+  m_LocalPosition: {x: 0.17700002, y: -0.007999763, z: 0.24500147}
   m_LocalScale: {x: 0.45138356, y: 0.45138356, z: 0.45138356}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42203,7 +42189,7 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 4411384124427772465}
   - {fileID: 7552006509673486737}
-  GameEnd: {fileID: 0}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &2652275291984865686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42275,7 +42261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3887072309800797157}
   m_LocalRotation: {x: -0, y: 0.9935712, z: -0, w: -0.1132088}
-  m_LocalPosition: {x: -2.9544792, y: -0.01999729, z: -0.13398588}
+  m_LocalPosition: {x: -2.9544795, y: -0.019997217, z: -0.13398588}
   m_LocalScale: {x: 0.45231345, y: 0.45231345, z: 0.45231345}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72696,7 +72682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5530061584757049697}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20049258, y: -0.016000194, z: 0.07499916}
+  m_LocalPosition: {x: 0.20049255, y: -0.01600012, z: 0.07499916}
   m_LocalScale: {x: 0.4510941, y: 0.4510941, z: 0.4510941}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -82585,7 +82571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1803856538496417452
 Transform:
   m_ObjectHideFlags: 0
@@ -82933,7 +82919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8402308990167026966}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13549438, y: 0.0009968409, z: 0.21698116}
+  m_LocalPosition: {x: 0.13549435, y: 0.0009969152, z: 0.21698175}
   m_LocalScale: {x: 0.46033633, y: 0.46033633, z: 0.46033633}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88462,7 +88448,7 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 828788371364834078}
   - {fileID: 6260285672733213682}
-  GameEnd: {fileID: 0}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &8075643681078733694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88552,7 +88538,7 @@ MonoBehaviour:
   - {fileID: 6496980308448080080}
   - {fileID: 404135298961801405}
   - {fileID: 1317058046792812976}
-  GameEnd: {fileID: 0}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &200232820566270998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88642,7 +88628,7 @@ MonoBehaviour:
   - {fileID: 7300827330227015608}
   - {fileID: 4510596857740964994}
   - {fileID: 4380270472823906090}
-  GameEnd: {fileID: 0}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &2483272875459633931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88734,7 +88720,7 @@ MonoBehaviour:
   - {fileID: 6425159526180318276}
   - {fileID: 2974288321846505061}
   - {fileID: 7534152630483716506}
-  GameEnd: {fileID: 0}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &7227215470519747600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -93794,7 +93780,7 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 7288495672287397745}
   - {fileID: 1249066761161726329}
-  GameEnd: {fileID: 0}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &5679617537433782583
 BoxCollider:
   m_ObjectHideFlags: 0
