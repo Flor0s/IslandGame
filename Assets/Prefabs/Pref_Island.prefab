@@ -27189,7 +27189,7 @@ GameObject:
   - component: {fileID: 2156596039178651258}
   - component: {fileID: 2156596039178651257}
   m_Layer: 0
-  m_Name: Red (1)
+  m_Name: GameEnd
   m_TagString: ThermoLiqued
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27285,6 +27285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa00e9717cf06d4cb57d09e04cb5a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentObject: {fileID: 8853649873982154514}
   End:
     m_PersistentCalls:
       m_Calls:
@@ -42202,6 +42203,7 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 4411384124427772465}
   - {fileID: 7552006509673486737}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &2652275291984865686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88459,6 +88461,7 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 828788371364834078}
   - {fileID: 6260285672733213682}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &8075643681078733694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88548,6 +88551,7 @@ MonoBehaviour:
   - {fileID: 6496980308448080080}
   - {fileID: 404135298961801405}
   - {fileID: 1317058046792812976}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &200232820566270998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88637,6 +88641,7 @@ MonoBehaviour:
   - {fileID: 7300827330227015608}
   - {fileID: 4510596857740964994}
   - {fileID: 4380270472823906090}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &2483272875459633931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88728,6 +88733,7 @@ MonoBehaviour:
   - {fileID: 6425159526180318276}
   - {fileID: 2974288321846505061}
   - {fileID: 7534152630483716506}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &7227215470519747600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -93787,6 +93793,7 @@ MonoBehaviour:
   Diffrentstages:
   - {fileID: 7288495672287397745}
   - {fileID: 1249066761161726329}
+  GameEnd: {fileID: 2156596039178651258}
 --- !u!65 &5679617537433782583
 BoxCollider:
   m_ObjectHideFlags: 0
