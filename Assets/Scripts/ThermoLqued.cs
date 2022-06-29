@@ -7,8 +7,6 @@ public class ThermoLqued : MonoBehaviour
     [Header("Win/lose")]
     public bool allBuildingsBuilt = false;//If this is true, tentacles must light up
 
-    public bool ThermometerFull = false;// if this is true player lost
-
     [Header("thermometer")]
     public float GrowAmount;//amount that the temprature rises
 
@@ -55,7 +53,10 @@ public class ThermoLqued : MonoBehaviour
 
     public void CO2Down(float Co2loweramount)
     {
-        gameObject.transform.localScale -= new Vector3(0, Co2loweramount, 0);
+        if (gameObject.transform.localScale.y >= 1)
+        {
+            gameObject.transform.localScale -= new Vector3(0, Co2loweramount, 0);
+        }
     }
 
     private void resetTimer()
