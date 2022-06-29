@@ -37045,7 +37045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allBuildingsBuilt: 0
-  ThermometerFull: 0
   GrowAmount: 0.025
   timer: 1
   WaterObjects:
@@ -79526,6 +79525,7 @@ Transform:
   - {fileID: 5747177220864313391}
   - {fileID: 381576352186211264}
   - {fileID: 8389624310698721292}
+  - {fileID: 1330568404754005737}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100393,6 +100393,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4070298923940427321, guid: 7d3cf5bf3e9970e4689719fa104a3f95,
     type: 3}
   m_PrefabInstance: {fileID: 2627469229170248921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3735122061316390142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5873947996259854004}
+    m_Modifications:
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189287560593484664, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+        type: 3}
+      propertyPath: m_Name
+      value: Wolk particle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c0a410b28eebd549b5261bb5f05f62d, type: 3}
+--- !u!4 &1330568404754005737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2423764891279327767, guid: 5c0a410b28eebd549b5261bb5f05f62d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3735122061316390142}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3871539331582384376
 PrefabInstance:
