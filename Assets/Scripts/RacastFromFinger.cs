@@ -5,8 +5,6 @@ using UnityEngine;
 public class RacastFromFinger : MonoBehaviour
 {
     [SerializeField] private Camera camera;
-    private GameObject _OBJlvl;
-    private ButtonPresses buttonP;
 
     private void Awake()
     {
@@ -37,7 +35,6 @@ public class RacastFromFinger : MonoBehaviour
             Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.gameObject.tag == ("UpgradeBles"))
             {
-                // buttonP.ButtonPress();
                 hit.transform.gameObject.SendMessage("LevelUP");
             }
         }

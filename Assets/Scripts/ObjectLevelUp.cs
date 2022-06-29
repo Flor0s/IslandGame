@@ -24,8 +24,7 @@ public class ObjectLevelUp : MonoBehaviour
     private Animator m_Animator;
 
     private ThermoLqued m_Thermo;
-
-    private int m_presses = 0;
+    public GameEnd GameEnd;
 
     private void Awake()
     {
@@ -61,6 +60,7 @@ public class ObjectLevelUp : MonoBehaviour
         }
         else
         {
+            GameEnd.AddObjectToMaxLevel();
         }
     }
 }
