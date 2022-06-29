@@ -22,7 +22,7 @@ public class ObjectLevelUp : MonoBehaviour
 
     private bool IsButtonPresed;
     private Animator m_Animator;
-
+    private bool ObjectMaxLevel;
     private ThermoLqued m_Thermo;
     public GameEnd GameEnd;
 
@@ -60,7 +60,11 @@ public class ObjectLevelUp : MonoBehaviour
         }
         else
         {
-            GameEnd.AddObjectToMaxLevel();
+            if (!ObjectMaxLevel)
+            {
+                GameEnd.AddObjectToMaxLevel();
+                ObjectMaxLevel = true;
+            }
         }
     }
 }

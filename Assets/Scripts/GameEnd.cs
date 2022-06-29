@@ -6,13 +6,14 @@ using UnityEngine.Events;
 public class GameEnd : MonoBehaviour
 {
     public GameObject ParentObject;
-    public UnityEvent End;
 
+    private ActivateEndGame EndButton;
     private ObjectLevelUp[] ObjlvlUp;
-    private int ObjectsMaxLevel = 0;
+    [SerializeField] private int ObjectsMaxLevel = 0;
 
     private void Start()
     {
+        EndButton = FindObjectOfType<ActivateEndGame>();
         ObjlvlUp = ParentObject.GetComponentsInChildren<ObjectLevelUp>();
     }
 
@@ -39,7 +40,8 @@ public class GameEnd : MonoBehaviour
 
     private void EndGame()
     {
-        End.Invoke();
+        EndButton.SetEndGameActive();
+
         Time.timeScale = 0;
     }
 
