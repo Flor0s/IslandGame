@@ -21222,6 +21222,8 @@ GameObject:
   - component: {fileID: 5968784982456380351}
   - component: {fileID: 2826526339814406408}
   - component: {fileID: 2118558056665275843}
+  - component: {fileID: 7835886612405951434}
+  - component: {fileID: 9120398596439477404}
   m_Layer: 0
   m_Name: Bootjes arrow rechts
   m_TagString: Untagged
@@ -21309,6 +21311,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alignNotLook: 1
+--- !u!111 &7835886612405951434
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378091203361796429}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3241e99e126038b4fad0aafaa21007d0, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &9120398596439477404
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378091203361796429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6a4d5ab232faee49bf162ac36147002, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1511741872953115623
 GameObject:
   m_ObjectHideFlags: 0
@@ -26382,6 +26419,8 @@ GameObject:
   - component: {fileID: 4741407735281228645}
   - component: {fileID: 9215843851311392796}
   - component: {fileID: 1124515911022470508}
+  - component: {fileID: 4300996271532037395}
+  - component: {fileID: 6674884929100523156}
   m_Layer: 0
   m_Name: cool arrow
   m_TagString: Untagged
@@ -26469,6 +26508,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alignNotLook: 1
+--- !u!111 &4300996271532037395
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591948120903503983}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3241e99e126038b4fad0aafaa21007d0, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &6674884929100523156
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591948120903503983}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6a4d5ab232faee49bf162ac36147002, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1815533787962968399
 GameObject:
   m_ObjectHideFlags: 0
@@ -27346,12 +27420,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa00e9717cf06d4cb57d09e04cb5a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lose:
+  End:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2156596037930435575}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27359,7 +27433,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!54 &2156596039178651257
 Rigidbody:
@@ -32200,6 +32274,8 @@ GameObject:
   - component: {fileID: 7944860054931310389}
   - component: {fileID: 1316223832642513059}
   - component: {fileID: 2663175491600581000}
+  - component: {fileID: 3031685799144465591}
+  - component: {fileID: 5039026698990729146}
   m_Layer: 0
   m_Name: Bootjes arrow links
   m_TagString: Untagged
@@ -32287,6 +32363,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alignNotLook: 1
+--- !u!111 &3031685799144465591
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200864792596366429}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3241e99e126038b4fad0aafaa21007d0, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &5039026698990729146
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200864792596366429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6a4d5ab232faee49bf162ac36147002, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2273692791695514001
 GameObject:
   m_ObjectHideFlags: 0
@@ -67690,6 +67801,8 @@ GameObject:
   - component: {fileID: 2024740659025290347}
   - component: {fileID: 8500741758708818804}
   - component: {fileID: 3003944192593487281}
+  - component: {fileID: 1749231476937459529}
+  - component: {fileID: 3802572817738160800}
   m_Layer: 0
   m_Name: olie arrow
   m_TagString: Untagged
@@ -67777,6 +67890,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alignNotLook: 1
+--- !u!111 &1749231476937459529
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146972481527973827}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3241e99e126038b4fad0aafaa21007d0, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &3802572817738160800
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146972481527973827}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6a4d5ab232faee49bf162ac36147002, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5333885691329794303
 GameObject:
   m_ObjectHideFlags: 0
@@ -79823,6 +79971,7 @@ GameObject:
   - component: {fileID: 467610512518116525}
   - component: {fileID: 2136449509223324925}
   - component: {fileID: 4112888601472189543}
+  - component: {fileID: 6969502144561247233}
   m_Layer: 0
   m_Name: bio arrow
   m_TagString: Untagged
@@ -79910,6 +80059,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alignNotLook: 1
+--- !u!95 &6969502144561247233
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916182419938136067}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6a4d5ab232faee49bf162ac36147002, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7030376589713715364
 GameObject:
   m_ObjectHideFlags: 0

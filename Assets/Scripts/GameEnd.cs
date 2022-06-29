@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GameLose : MonoBehaviour
+public class GameEnd : MonoBehaviour
 {
     // ff naar kijken naar conventies
     //checked wat bool doet
     private bool SciptOnWinningObject = false;
 
-    private ActivateEndGame LoseButton;
-    public UnityEvent Lose;
+    private ActivateEndGame EndButton;
+    public UnityEvent End;
 
     private void Start()
     {
-        LoseButton = FindObjectOfType<ActivateEndGame>();
+        EndButton = FindObjectOfType<ActivateEndGame>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "ThermoLiqued")
         {
-            LoseButton.SetEndGameActive();
-            Lose.Invoke();
+            EndButton.SetEndGameActive();
+            End.Invoke();
+            Time.timeScale = 0;
         }
     }
 }
