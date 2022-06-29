@@ -32,7 +32,7 @@ public class GameEnd : MonoBehaviour
 
     private void CheckIfObjectsMaxLvl()
     {
-        if (ObjectsMaxLevel >= ObjlvlUp.Length - 2)
+        if (ObjectsMaxLevel >= ObjlvlUp.Length)
         {
             EndGame();
         }
