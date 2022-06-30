@@ -41,8 +41,6 @@ public class GameEnd : MonoBehaviour
     private void EndGame()
     {
         EndButton.SetEndGameActive();
-
-        Time.timeScale = 0;
     }
 
     public void AddObjectToMaxLevel()

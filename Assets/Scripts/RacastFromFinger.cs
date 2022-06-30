@@ -9,30 +9,29 @@ public class RacastFromFinger : MonoBehaviour
     private void Awake()
     {
         camera = Camera.main;
-        //buttonP = FindObjectOfType<ButtonPresses>();
     }
 
     private void Update()
     {
         for (var i = 0; i < Input.touchCount; i++)
         {
-            print(i);
-            print(Input.GetTouch(i).phase);
+            //print(i);
+            //print(Input.GetTouch(i).phase);
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
-                EatTheRich(Input.GetTouch(i).position);
+                SendMessagesToObjcet(Input.GetTouch(i).position);
             }
         }
     }
 
-    private void EatTheRich(Vector2 richLocation)
+    private void SendMessagesToObjcet(Vector2 FingerLocation)
     {
         RaycastHit hit;
-        Ray ray = camera.ScreenPointToRay(richLocation);
+        Ray ray = camera.ScreenPointToRay(FingerLocation);
 
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log(hit.collider.gameObject.name);
+            //Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.gameObject.tag == ("UpgradeBles"))
             {
                 hit.transform.gameObject.SendMessage("LevelUP");

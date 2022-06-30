@@ -57,14 +57,22 @@ public class ObjectLevelUp : MonoBehaviour
             m_Thermo.CO2Down(TempDown);
 
             if (!IsButtonPresed) IsButtonPresed = true;
-        }
-        else
-        {
-            if (!ObjectMaxLevel)
+
+            Debug.Log(Diffrentstages.Length);
+
+            if (Level == Diffrentstages.Length - 1)
             {
-                GameEnd.AddObjectToMaxLevel();
-                ObjectMaxLevel = true;
+                setObjectMaxLevel();
             }
+        }
+    }
+
+    public void setObjectMaxLevel()
+    {
+        if (!ObjectMaxLevel)
+        {
+            GameEnd.AddObjectToMaxLevel();
+            ObjectMaxLevel = true;
         }
     }
 }

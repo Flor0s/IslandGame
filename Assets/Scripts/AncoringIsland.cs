@@ -46,7 +46,6 @@ public class AncoringIsland : MonoBehaviour
     public void instantiateIsland()
     {
         spawnedIsland = Instantiate(IslandPrefab, gameObject.transform);
-        Time.timeScale = 1;
     }
 
     public void DestroyIsland()
