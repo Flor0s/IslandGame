@@ -31,7 +31,6 @@ public class RacastFromFinger : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            //Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.gameObject.tag == ("UpgradeBles"))
             {
                 hit.transform.gameObject.SendMessage("LevelUP");

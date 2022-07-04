@@ -58,8 +58,6 @@ public class ObjectLevelUp : MonoBehaviour
 
             if (!IsButtonPresed) IsButtonPresed = true;
 
-            Debug.Log(Diffrentstages.Length);
-
             if (Level == Diffrentstages.Length - 1)
             {
                 setObjectMaxLevel();
